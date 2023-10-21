@@ -23,18 +23,108 @@ div>p:nth-child(7) {
 }
 
 /* 2 завдання */
-li:hover, li:focus{
-    color: red;
-    cursor: pointer; 
-} 
-
 /* Понеділок */
-
 .list-monday > li:nth-child(even){
     color:aqua;
 }
 
-/* Вівторок */
-.list-tuesday > li:nth-child(){
 
+.list-monday > li:nth-child(odd){
+    color:green;
 }
+
+
+.list-monday > li:hover, .list-monday > li:focus {
+    background-color: white;
+    color: red;
+    cursor: pointer;
+}
+
+
+
+/* Вівторок */
+.list-tuesday > li:nth-child(2n+3){
+    color: red;
+}
+
+.list-tuesday > li:nth-child(-n+2){
+    color: green;
+}
+
+.list-tuesday > li:nth-child(2n+4){
+    color: yellow;
+}
+
+.list-tuesday > li:hover, .list-tuesday > li:focus {
+    background-color: white;
+    color: blue;
+    cursor: pointer;
+}
+
+
+
+/* Cереда */
+.list-wednesdey > li:first-child {
+    color: tomato;
+}
+
+.list-wednesdey > li:nth-child(n+2){
+    color: purple
+}
+
+.list-wednesdey > li:last-child{
+    color:black;
+}
+
+.list-wednesdey > li:hover, .list-wednesdey > li:focus {
+    background-color: white;
+    color: white;
+    cursor:default
+}
+
+
+
+/* Четвер */
+.list-thursday{
+    color: red;
+}
+
+.list-thursday > li:nth-child(-n+6){
+    color: greenyellow;
+}
+
+.list-thursday > li:nth-child(-n+4){
+    color: blueviolet;
+}
+
+.list-thursday > li:nth-child(-n+2){
+    color: blue;
+}
+
+.list-thursday > li:hover, .list-thursday > li:focus{
+    background-color: black;
+    color: white;
+    cursor:default;
+}
+
+
+
+/* П'ятниця */
+.list-friday > li:nth-child(-n+6){
+    color:green;
+}
+
+.list-friday > li:nth-child(2n){
+    color: blue;
+}
+
+.list-friday > li:nth-child(3n){
+    color: aqua;
+}
+
+.list-friday > li:hover, .list-friday > li:focus{
+    background-color: yellow;
+    color: black;
+    cursor: default;
+}
+
